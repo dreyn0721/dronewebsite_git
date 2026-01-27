@@ -158,9 +158,9 @@ include("init/main-functions.php");
 
 	    <div class="collapse navbar-collapse" id="nav">
 	      <ul class="navbar-nav ms-auto align-items-lg-center">
-	        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+	        <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>">Home</a></li>
 
-	        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+	        <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>/blog.php">Blog</a></li>
 
 	        <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
 
@@ -176,4 +176,4 @@ include("init/main-functions.php");
 	  </div>
 	</nav>
 
-	<div style="height:90px"></div>
+	<div style="height:120px"></div>

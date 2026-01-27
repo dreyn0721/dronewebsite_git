@@ -4,7 +4,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "boldwolfenterprises_git";
+$dbname = "dronewebsite_git";
 
 
 // Create connection
