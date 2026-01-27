@@ -1,7 +1,7 @@
 <?php 
 // Vars
 $page = "dashboard";
-$pagetitle = "Dashboard | Drone";
+$pagetitle = "Dashboard | Drone Services";
 $description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non euismod dolor. Integer sapien ipsum, dapibus eget bibendum sed nullam sodales.";
 
 include("template-parts/header-admin.php");
@@ -11,9 +11,14 @@ if( !logged_in() ){
 }
 ?>
 
+<div class="container">
+  x
+</div>
+
+
+<?php include("template-parts/footer-admin.php"); ?>
 
 
 
 
-<?php include("template-parts/footer.php"); ?>
 

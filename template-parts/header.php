@@ -2,7 +2,6 @@
 include("init/database.php");
 include("init/main-functions.php"); 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,8 +25,155 @@ include("init/main-functions.php");
 	<meta name="description" content="<?=$description;?>">
 	<meta name="author" content="<?=$author;?>" />
 	<title><?=$pagetitle;?></title>
+
+	<style>
+	:root{
+	  --primary:#706868;
+	  --secondary:#55635e;
+	}
+
+	html{scroll-behavior:smooth;}
+	body{font-family:Arial,sans-serif;}
+
+	/* ===== Futuristic Separator ===== */
+	.separator{
+	  position:relative;
+	}
+	.separator::after{
+	  content:"";
+	  display:block;
+	  height:70px;
+	  background:
+	    linear-gradient(135deg,
+	      transparent 60%,
+	      rgba(0,0,0,.08) 60%,
+	      rgba(0,0,0,.08) 65%,
+	      transparent 65%);
+	}
+
+	/* ===== Navbar ===== */
+	.navbar{background:#fff;}
+	.nav-link{
+	  position:relative;
+	  color:#000;
+	}
+	.nav-link:hover{color:var(--primary);}
+	.nav-link::after{
+	  content:"";
+	  position:absolute;
+	  width:0;
+	  height:2px;
+	  background:var(--primary);
+	  left:0;
+	  bottom:0;
+	  transition:.3s;
+	}
+	.nav-link:hover::after{width:100%;}
+
+	/* CTA Button */
+	.cta-btn{
+	  position:relative;
+	  overflow:hidden;
+	  background:var(--primary);
+	  color:#fff;
+	  border:1px solid #706868;
+	}
+	.cta-btn::before{
+	  content:"";
+	  position:absolute;
+	  inset:0;
+	  background:#fff;
+	  transform:translateY(-100%);
+	  transition:.4s;
+	  z-index:0;
+	}
+	.cta-btn:hover::before{transform:translateX(0);
+	  border: solid 1px #706868;
+	  border-radius: 5px;}
+	.cta-btn span{
+	  position:relative;
+	  z-index:1;
+	}
+	.cta-btn:hover span{color:var(--primary);}
+
+	/* ===== Hero ===== */
+	.hero{
+	  background:
+	    linear-gradient(to right, var(--primary), transparent),
+	    url("https://dummyimage.com/800x400/000/fff");
+	  background-size:cover;
+	  padding:120px 0;
+	}
+	.hero-card{
+	  background:rgba(255,255,255,.6);
+	  backdrop-filter:blur(5px);
+	  width:70%;
+	  margin:auto;
+	  border-radius:15px;
+	  padding:40px;
+	}
+	.hero-card h1{color:var(--primary);}
+
+	/* Stars */
+	.stars i{color:#f5b301;}
+
+	/* Section title */
+	.section-title{
+	  color:var(--primary);
+	  font-weight:bold;
+	  margin-bottom:30px;
+	}
+
+	/* Footer */
+	footer{background:var(--primary);color:#fff;}
+	footer a{color:#ddd;text-decoration:none;}
+	footer a:hover{color:#fff;}
+	.footer-bottom{
+	  background:#cfd0d1;
+	  color:#000;
+	  text-align:center;
+	  padding:10px;
+	}
+
+
+
+	
+	</style>
+
+
 </head>
 <body>
 
 
-	<main class="main-content">
+	<!-- ===== NAVBAR ===== -->
+	<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+	  <div class="container">
+	    <a class="navbar-brand">
+	      <img src="https://dummyimage.com/200x80/000/fff&text=LOGO">
+	    </a>
+
+	    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+
+	    <div class="collapse navbar-collapse" id="nav">
+	      <ul class="navbar-nav ms-auto align-items-lg-center">
+	        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+
+	        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+
+	        <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+
+	        <li class="nav-item"><a class="nav-link" href="#">Our Services</a></li>
+
+	        <li class="nav-item ms-lg-3">
+	          <button class="btn cta-btn scroll-btn">
+	            <span>Reach Us Out</span>
+	          </button>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div style="height:90px"></div>
