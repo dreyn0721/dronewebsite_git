@@ -1,7 +1,7 @@
 <?php
 // Vars
 $page = "home";
-$pagetitle = "Home | Drone Services<";
+$pagetitle = "Home | Drone Services";
 $description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non euismod dolor. Integer sapien ipsum, dapibus eget bibendum sed nullam sodales.";
 
 
