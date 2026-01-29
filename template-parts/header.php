@@ -22,6 +22,10 @@ include("init/main-functions.php");
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+	<link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
+	<script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
+
+
 	<meta name="description" content="<?=$description;?>">
 	<meta name="author" content="<?=$author;?>" />
 	<title><?=$pagetitle;?></title>
